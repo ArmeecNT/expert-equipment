@@ -134,69 +134,6 @@ main>.hero #application-toggle{width:100%!important;height:100%!important;min-he
 main>.hero .hero-actions{left:5.2%!important;top:55.4%!important;width:20%!important;height:7.5%!important}
 main>.hero #application-toggle{font-size:clamp(12px,1.3vw,18px)!important}
 @media(max-width:700px){main>.hero .hero-actions{left:5.2%!important;top:55.4%!important;width:29%!important;height:10%!important}main>.hero #application-toggle{font-size:clamp(10px,2.2vw,14px)!important}}
-</style><style id="mobile-responsive-fix-20261108">
-/* Mobile-only corrections; approved desktop layout remains unchanged. */
-@media(max-width:700px){
-html,body{max-width:100%;overflow-x:clip}
-header{min-height:0;padding:12px 4%!important}
-header b{font-size:clamp(11px,3.3vw,15px);gap:8px;overflow-wrap:anywhere}
-header .brand-mark{width:30px;height:30px;flex-shrink:0}
-main>.hero{height:auto!important;min-height:0!important;aspect-ratio:3/2!important;background-size:100% 100%!important;background-position:center!important}
-main>.hero .hero-actions{left:5.2%!important;top:55.4%!important;width:29%!important;height:10%!important}
-main>.hero #application-toggle{font-size:clamp(9px,2.5vw,14px)!important;min-width:0!important;padding:0 4px!important}
-.equipment-strip{grid-template-columns:repeat(2,minmax(0,1fr));padding:8px 3%}
-.equipment-tile{min-width:0;min-height:95px;padding:8px 5px;border-bottom:1px solid #bac3c9}
-.equipment-tile:nth-child(2n){border-right:0}
-.equipment-tile strong{font-size:12px;overflow-wrap:anywhere}
-.dashboard{grid-template-columns:minmax(0,1fr);gap:26px;padding:26px 4%}
-.dashboard .section,.dashboard #experts,.dashboard #price{min-width:0}
-.dashboard #experts .grid{grid-template-columns:minmax(0,1fr);gap:12px}
-.dashboard #experts .card{grid-template-columns:minmax(0,38%) minmax(0,1fr);gap:10px;min-width:0}
-.dashboard #experts .portrait{width:100%;min-width:0;height:185px;background-position:left top}
-.dashboard #experts .card h3{font-size:clamp(14px,4vw,19px)}
-.dashboard #experts .card p{font-size:12px;overflow-wrap:anywhere}
-.price-box{grid-template-columns:minmax(0,1fr);gap:14px;padding:13px}
-.price-main{min-width:0;padding:12px;font-size:16px}
-.price-main .price{font-size:clamp(25px,8vw,38px);white-space:normal;overflow-wrap:anywhere}
-.trust-strip{grid-template-columns:repeat(2,minmax(0,1fr));padding:15px 4%;gap:12px}
-.trust-strip>div{min-width:0;gap:7px;overflow-wrap:anywhere}
-#services.services-detail{border-radius:0;padding:30px 4%}
-#services h2{font-size:clamp(24px,7vw,32px)}
-#application-modal .application-dialog{max-height:calc(100dvh - 18px);overflow-y:auto}
-#application-modal #application{padding:24px 14px 18px!important}
-#application-modal .application-field input,#application-modal .application-field select,#application-modal .application-field textarea{min-width:0;font-size:16px}
-footer{padding:25px 4%;overflow-wrap:anywhere}
-}
-@media(max-width:360px){
-.dashboard #experts .card{grid-template-columns:minmax(0,34%) minmax(0,1fr);gap:7px;padding:7px}
-.dashboard #experts .card p{font-size:11px}
-.dashboard #experts .portrait{height:175px}
-}
-</style><style id="mobile-banner-portraits-20261108">
-@media(max-width:700px){
-/* Show the entire approved banner rather than crop its left-hand title. */
-main>.hero{width:100%!important;height:auto!important;min-height:0!important;aspect-ratio:3/2!important;background-size:contain!important;background-position:center top!important;background-repeat:no-repeat!important;background-color:#090e13!important;overflow:hidden!important}
-main>.hero .hero-actions{left:5.2%!important;top:55.4%!important;width:29%!important;height:10%!important}
-main>.hero #application-toggle{width:100%!important;height:100%!important;max-width:100%!important;font-size:clamp(8px,2.2vw,13px)!important;white-space:nowrap!important}
-/* Use the actual portrait photos instead of zoomed background crops. */
-#experts .portrait,.dashboard #experts .portrait,.dashboard #experts .card:nth-child(2) .portrait{background-image:none!important;background:#15222c!important;background-size:auto!important;height:210px!important;overflow:hidden!important}
-#experts .portrait img,.dashboard #experts .portrait img{display:block!important;width:100%!important;height:100%!important;object-fit:contain!important;object-position:center center!important;transform:none!important}
-#experts .portrait::after,.dashboard #experts .portrait::after{display:none!important}
-}
-</style><style id="mobile-portrait-text-crop-20261108">
-@media(max-width:700px){
-/* Keep the portrait and hide the right-hand lettering baked into the photo. */
-.dashboard #experts .portrait,#experts .portrait{overflow:hidden!important;position:relative!important}
-.dashboard #experts .portrait img,#experts .portrait img{width:125%!important;max-width:none!important;height:100%!important;object-fit:cover!important;object-position:left center!important;display:block!important;transform:none!important}
-}
-</style><style id="mobile-cta-raise-20261108">@media(max-width:700px){main>.hero .hero-actions{top:49%!important}}</style><style id="mobile-cta-and-portraits-final-20261108">
-@media(max-width:700px){
-/* Button in the clear space below subtitle and above the book. */
-main>.hero .hero-actions{top:48%!important;left:5.2%!important;width:29%!important;height:9%!important}
-/* Avoid cover cropping heads; keep original vertical framing and clip text at right. */
-.dashboard #experts .portrait,#experts .portrait{position:relative!important;overflow:hidden!important;height:210px!important;background:#15222c!important}
-.dashboard #experts .portrait img,#experts .portrait img{position:absolute!important;left:0!important;top:0!important;width:auto!important;max-width:none!important;height:100%!important;object-fit:contain!important;object-position:left top!important;transform:none!important}
-}
 </style></head><body><header><b><svg class="brand-mark" viewBox="0 0 64 64" width="38" height="38" role="img" aria-label="Весы правосудия внутри шестерёнки" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#ff891d" stroke-width="5" stroke-linejoin="round" d="M28 3h8l2 6 6 2 6-3 6 6-3 6 2 6 6 2v8l-6 2-2 6 3 6-6 6-6-3-6 2-2 6h-8l-2-6-6-2-6 3-6-6 3-6-2-6-6-2v-8l6-2 2-6-3-6 6-6 6 3 6-2z"/><circle cx="32" cy="32" r="21" fill="#101820" stroke="#ff891d" stroke-width="2"/><g stroke="#ff891d" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M32 15v32M20 23h24M32 19l-12 4-7 13m19-17 12 4 7 13M25 47h14M20 23l7 13m17-13-7 13"/><path d="M12 36q8 11 16 0zM36 36q8 11 16 0z" fill="#ff891d" stroke="none"/></g></svg> Независимая экспертиза<br>промышленного оборудования</b></header><main id="top"><section class="hero"><svg class="hero-justice" viewBox="0 0 420 470" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffcf82"/><stop offset=".45" stop-color="#ff8b16"/><stop offset="1" stop-color="#8a3905"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="5"/></filter></defs><ellipse cx="210" cy="438" rx="130" ry="14" fill="#ff7900" opacity=".24" filter="url(#glow)"/><g stroke="url(#gold)" stroke-linejoin="round" stroke-linecap="round"><path d="M210 52v360M165 419h90M140 437h140" stroke-width="15"/><circle cx="210" cy="49" r="16" fill="url(#gold)" stroke-width="3"/><path d="M63 122Q210 73 357 122" fill="none" stroke-width="12"/><circle cx="210" cy="116" r="13" fill="url(#gold)" stroke-width="3"/><path d="M84 124L44 269M84 124L128 269M335 124L294 269M335 124L377 269" fill="none" stroke-width="3"/><path d="M23 269Q85 310 149 269Z M273 269Q335 310 397 269Z" fill="url(#gold)" stroke-width="5"/></g></svg><div class="hero-book" aria-hidden="true"><div class="book-pages"></div><div class="book-cover"><span>⚖</span><small>СУДЕБНАЯ<br>ЭКСПЕРТИЗА</small></div></div><div class="hero-copy"><h1>Независимая<br>экспертиза<br><span>оборудования</span></h1><h3>Техническая оценка, диагностика и экспертные заключения для суда, бизнеса и страховых компаний</h3><ul class="hero-points"><li>Техническая экспертиза и выявление неисправностей</li><li>Оценка качества и соответствия заявленным характеристикам</li><li>Установление причин отказа и дефектов</li><li>Подготовка технических заключений для суда</li></ul><div class="hero-actions"><a class="btn" href="#application" id="application-toggle" role="button" aria-haspopup="dialog" aria-controls="application-modal" >Оставить заявку</a><button class="btn btn-outline" type="button" id="consultation-toggle" aria-haspopup="dialog" aria-controls="consultation-modal">Получить консультацию</button></div></div><div class="hero-facts"><div><svg class="fact-mark" viewBox="0 0 64 64" width="38" height="38" role="img" aria-label="Весы правосудия внутри шестерёнки" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#ff891d" stroke-width="5" stroke-linejoin="round" d="M28 3h8l2 6 6 2 6-3 6 6-3 6 2 6 6 2v8l-6 2-2 6 3 6-6 6-6-3-6 2-2 6h-8l-2-6-6-2-6 3-6-6 3-6-2-6-6-2v-8l6-2 2-6-3-6 6-6 6 3 6-2z"/><circle cx="32" cy="32" r="21" fill="#101820" stroke="#ff891d" stroke-width="2"/><g stroke="#ff891d" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M32 15v32M20 23h24M32 19l-12 4-7 13m19-17 12 4 7 13M25 47h14M20 23l7 13m17-13-7 13"/><path d="M12 36q8 11 16 0zM36 36q8 11 16 0z" fill="#ff891d" stroke="none"/></g></svg> Экспертные заключения<br>для разрешения споров</div><div><span>⬡</span> Работаем<br>по всей России</div></div></section><section id="equipment" class="equipment-strip"><a href="#services" class="equipment-tile"><span class="machine-icon">▱</span><strong>Листогибочные прессы</strong></a><a href="#services" class="equipment-tile"><span class="machine-icon">✦</span><strong>Лазерные станки</strong></a><a href="#services" class="equipment-tile"><span class="machine-icon">◉</span><strong>Токарные станки с ЧПУ</strong></a><a href="#services" class="equipment-tile"><span class="machine-icon">▣</span><strong>Фрезерные станки с ЧПУ</strong></a><a href="#services" class="equipment-tile"><span class="machine-icon">▤</span><strong>Обрабатывающие центры</strong></a><a href="#services" class="equipment-tile"><span class="machine-icon">⚙</span><strong>Другое оборудование</strong></a></section><div class="dashboard"><section id="experts" class="section"><h2>Наши эксперты</h2><div class="grid"><div class="card"><div class="portrait"><img src="/expert-equipment/kirill.jpg?v=2" alt="Поляруш Кирилл Витальевич" ></div><h3>Поляруш Кирилл Витальевич</h3><p>Опыт работы в металлообработке более 10 лет. Повышение квалификации по основам судебной экспертизы; добровольная сертификация по направлению исследования промышленного оборудования.</p></div><div class="card"><div class="portrait"><img src="/expert-equipment/egor.jpg?v=2" alt="Кондратенков Егор Владимирович" ></div><h3>Кондратенков Егор Владимирович</h3><p>Практический опыт работы с промышленным оборудованием более 10 лет. Участие в техническом исследовании металлообрабатывающих станков, выявлении дефектов и анализе их состояния.</p></div></div></section><section id="price" class="section"><h2>Стоимость экспертизы</h2><div class="price-box"><div class="price-main"><span class="price-symbol">▤</span><span>Комплексное исследование —</span><div class="price">от 100 000 ₽</div></div><ul><li>Выезд на объект</li><li>Проведение исследований</li><li>Анализ документации</li><li>Подготовка экспертного заключения</li></ul></div><p class="price-note">Окончательная стоимость зависит от сложности и объёма работ. Выезд оплачивается отдельно.</p></section></div><div class="trust-strip"><div>▦ <span>Оперативные сроки<br>проведения экспертизы</span></div><div>⬡ <span>Объективность<br>и независимость</span></div><div>▤ <span>Техническое<br>экспертное заключение</span></div><div>♧ <span>Поддержка на всех этапах<br>работы</span></div></div><section class="section services-detail" id="services"><div class="services-detail__content"><h2>Направления работ</h2><ul class="services-detail__list"><li>Выявление неисправностей и дефектов</li><li>Анализ технической документации и договорных условий</li><li>Проверка характеристик оборудования</li><li>Подготовка технического экспертного заключения</li></ul></div></section></main><footer>Независимая экспертиза промышленного оборудования · Россия<br><small>Назначение судебной экспертизы определяется уполномоченным органом или судом; техническое заключение само по себе не означает судебного назначения.</small></footer><style>
 #consultation-modal[hidden]{display:none!important}
 #consultation-modal{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(0,0,0,.78);backdrop-filter:blur(5px)}
